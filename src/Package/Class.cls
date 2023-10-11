@@ -7,6 +7,7 @@ ClassMethod MethodName() As %Status
 {
     Set sc = $$$OK
     // do something
+    // do soemthing else
     Return sc
 }
 
