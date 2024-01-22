@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="template.ZPM">
+    <Module>
+      <Name>template</Name>
+      <Version>1.0.0</Version>
+      <Description>description</Description>
+      <Keywords>keywords</Keywords>
+      <Author>
+        <Person>your name</Person>
+        <Organization>your organization</Organization>
+        <CopyrightDate>2024</CopyrightDate>
+        <License>MIT</License>
+        <Notes>notes</Notes>
+      </Author>
+      <Packaging>module</Packaging>
+      <Dependencies>
+        <ModuleReference>
+          <Name>module</Name>
+          <Version>1.*</Version>
+        </ModuleReference>
+      </Dependencies>
+      <Resource Directory="cls" Name="MyPackage.Demo.CLS"/>
+      <Resource Directory="cls" Name="Sample.PKG"/>
+      <Resource Directory="mac" Name="MyPackage.FirstRoutine.MAC"/>
+      <Resource Directory="inc" Name="MyPackage.First.INC"/>
+      <Resource Directory="gbl" Name="MyApp.Settings.GBL"/>
+      <CSPApplication CookiePath="/crud" DispatchClass="Sample.REST" PasswordAuthEnabled="1" Recurse="1" UnauthenticatedEnabled="0" Url="/crud" UseCookies="2"/>
+      <Resource Name="/tests/unit_tests/" Package="Test.Unit" Phase="test"/>
+      <CSPApplication CookiePath="/web" DeployPath="{$cspdir}myapp" PasswordAuthEnabled="1" Recurse="1" ServeFiles="1" SourcePath="/web" UnauthenticatedEnabled="0" Url="/web" UseCookies="2"/>
+      <SourcesRoot>src</SourcesRoot>
+    </Module>
+  </Document>
+</Export>
