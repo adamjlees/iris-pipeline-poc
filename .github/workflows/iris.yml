@@ -45,6 +45,7 @@ jobs:
         until docker exec --interactive $instance iris session $instance < wait; do sleep 1; done
         
     # Runs a set of commands using the runners shell
+    # outputs commands to a file 'build' using echo then uses that file as input to the iris session in docker exec
     - name: Build and Test
       run: |
         # Run build
